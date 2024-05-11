@@ -46,22 +46,22 @@ You can use tools like cURL or Postman to interact with the API endpoints.
 Retrieve all books
 bash
 Copy
-curl -X GET http://localhost:8080/books
+curl -X GET http://localhost:80/api/maids/book
 Retrieve a book by ID
 bash
 Copy
-curl -X GET http://localhost:8080/books/{id}
+curl -X GET http://localhost:80/api/maids/book/{id}
 Add a new book
 bash
 Copy
-curl -X POST -H "Content-Type: application/json" -d '{"title":"Book Title","author":"Book Author"}' http://localhost:8080/books
+curl -X POST -H "Content-Type: application/json" -d '{"title":"Book Title","author":"Book Author"}' http://localhost:80api/maids/book
 Update a book by ID
 bash
 Copy
-curl -X PUT -H "Content-Type: application/json" -d '{"title":"Updated Title","author":"Updated Author"}' http://localhost:8080/books/{id}
+curl -X PUT -H "Content-Type: application/json" -d '{"title":"Updated Title","author":"Updated Author"}' http://localhost:80/api/maids/book/{id}
 Delete a book by ID
 bash
 Copy
-curl -X DELETE http://localhost:8080/books/{id}
+curl -X DELETE http://localhost:8080/api/maids/book/{id}
 Authentication
 If authentication is implemented, you will need to provide valid credentials to access the API endpoints. Please refer to the authentication documentation for further instructions.
